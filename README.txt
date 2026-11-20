@@ -13,5 +13,16 @@ images/profile.png
 images/featured-build.png
 images/medieval-house.png
 
-You can add Blue Emeralds preview and screenshot images under
-images/blue-emeralds/ if they are available.
+Needed Images
+-------------
+images/blue-emeralds/
+        ├── BE-main.png
+        ├── BE-CatCafe_Fries.png
+        ├── BE-Hamburger.png
+        ├── BE-Pink_Emerald.png
+        ├── BE-Bunny-Bux.png
+        ├── BE-Cat_Currency.png
+        ├── BE-Master_Sword.png
+        ├── BE-Blue_Emerald.png
+        ├── BE-Money.png
+        └── BE-fries.png
