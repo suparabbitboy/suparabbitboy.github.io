@@ -1,353 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medieval House | suparabbitboy</title>
-<link rel="icon" type="image/png" href="../images/profile.png">
-
-<style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    background: #e9e9df;
-    color: #30342c;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-a {
-    color: #547c3e;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #83a95e;
-}
-
-header {
-    background: #385c37;
-    color: white;
-    border-bottom: 5px solid #29462b;
-}
-
-.header-inner {
-    max-width: 1050px;
-    margin: auto;
-    padding: 25px 20px;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
-.logo {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-    border: 3px solid #b7d19e;
-    border-radius: 8px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-header p {
-    color: #d3e4c8;
-    margin: 7px 0 0;
-}
-
-nav {
-    background: #293a2c;
-}
-
-nav .inner {
-    max-width: 1050px;
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: white;
-    padding: 15px 19px;
-    display: block;
-    border-bottom: 3px solid transparent;
-}
-
-nav a:hover {
-    background: #3c5139;
-    color: white;
-    border-bottom-color: #a8ce7c;
-}
-
-.container {
-    max-width: 1050px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
-
-.panel {
-    background: #f8f7f1;
-    border: 1px solid #d0d0c3;
-    border-radius: 6px;
-    margin-bottom: 24px;
-    overflow: hidden;
-}
-
-.panel-title {
-    background: #547a43;
-    color: white;
-    padding: 13px 18px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.panel-body {
-    padding: 20px;
-    line-height: 1.7;
-}
-
-h2 {
-    font-size: 23px;
-    margin: 0 0 12px;
-}
-
-h3 {
-    font-size: 17px;
-    margin: 0 0 8px;
-}
-
-.build-image {
-    width: 100%;
-    display: block;
-    border: 4px solid white;
-    border-radius: 4px;
-    margin-bottom: 18px;
-}
-
-.description {
-    color: #555a50;
-}
-
-.details {
-    background: #eeeee5;
-    border: 1px solid #d5d5c8;
-    border-radius: 4px;
-    padding: 14px;
-    margin-top: 18px;
-}
-
-.details p {
-    margin: 5px 0;
-}
-
-.button {
-    display: inline-block;
-    background: #5b8842;
-    color: white;
-    padding: 11px 18px;
-    border-radius: 4px;
-    margin: 5px 5px 5px 0;
-    font-weight: bold;
-    font-size: 14px;
-    border: 1px solid #456c33;
-}
-
-.button:hover {
-    background: #466e35;
-    color: white;
-}
-
-.youtube {
-    background: #c44438;
-    border-color: #a3332b;
-}
-
-.youtube:hover {
-    background: #a5332b;
-}
-
-.back-link {
-    display: inline-block;
-    margin-bottom: 18px;
-    font-weight: bold;
-}
-
-footer {
-    background: #293a2c;
-    color: #bfc9b8;
-    text-align: center;
-    padding: 25px 15px;
-    margin-top: 40px;
-    font-size: 13px;
-    line-height: 1.8;
-}
-
-footer strong {
-    color: white;
-}
-
-@media (max-width: 650px) {
-    .header-inner {
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 25px;
-    }
-
-    .logo {
-        width: 60px;
-        height: 60px;
-    }
-
-    nav a {
-        padding: 12px;
-        font-size: 13px;
-    }
-
-    .panel-body {
-        padding: 15px;
-    }
-
-    .button {
-        display: block;
-        text-align: center;
-    }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medieval House | suparabbitboy</title>
+  <link rel="icon" type="image/png" href="../images/profile.png">
+  <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
-
-<!-- HEADER -->
-<header>
-    <div class="header-inner">
-        <img class="logo" src="../images/profile.png" alt="Profile">
-        <div>
-            <h1>suparabbitboy</h1>
-            <p>Minecraft builds, projects and more.</p>
-        </div>
-    </div>
-</header>
-
-<!-- NAVIGATION -->
-<nav>
-    <div class="inner">
-        <a href="../index.html">Home</a>
-        <a href="../index.html#builds">Builds</a>
-        <a href="../index.html#youtube">YouTube</a>
-        <a href="../index.html#about">About</a>
-    </div>
-</nav>
-
-<div class="container">
-
-    <a class="back-link" href="../index.html#builds">
-        &laquo; Back to builds
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../images/profile.png" alt="" class="brand-icon">
+      <span>suparabbitboy</span>
     </a>
+    <nav aria-label="Main navigation">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#youtube">YouTube</a>
+      <a href="../index.html#about">About</a>
+    </nav>
+  </header>
 
-    <!-- BUILD INFORMATION -->
-    <section class="panel">
-        <div class="panel-title">Medieval House</div>
+  <main class="page-main">
+    <a class="back-link" href="../index.html#projects">← Back to projects</a>
 
-        <div class="panel-body">
-
-            <img class="build-image"
-                 src="../images/medieval-house.png"
-                 alt="Medieval Minecraft house">
-
-            <h2>Medieval House</h2>
-
-            <p class="description">
-                A medieval-style Minecraft house featuring
-                detailed wooden construction, a large roof
-                and traditional fantasy architecture.
-            </p>
-
-            <p>
-                Build it yourself using the schematic or
-                explore the completed build using the world
-                download!
-            </p>
-
-            <div class="details">
-                <h3>Build Information</h3>
-                <p><strong>Creator:</strong> suparabbitboy</p>
-                <p><strong>Style:</strong> Medieval / Fantasy</p>
-                <p><strong>Version:</strong> Minecraft 1.21.x</p>
-                <p><strong>Schematic:</strong> Litematic</p>
-            </div>
-
+    <section class="project-hero">
+      <div>
+        <p class="eyebrow">BUILD</p>
+        <h1>Medieval House</h1>
+        <p>A medieval-style Minecraft house featuring detailed wooden construction, a large roof and traditional fantasy architecture.</p>
+        <div class="meta-row">
+          <span class="pill">Style: Medieval / Fantasy</span>
+          <span class="pill">Minecraft 1.21.x</span>
         </div>
+        <div class="project-links">
+          <a class="button" href="https://www.youtube.com/watch?v=SMxajswyHsE" target="_blank" rel="noopener">Watch tutorial ↗</a>
+        </div>
+      </div>
+      <img class="project-cover" src="../images/medieval-house.png" alt="Medieval Minecraft house">
     </section>
 
-    <!-- DOWNLOADS -->
-    <section class="panel">
-        <div class="panel-title">Downloads</div>
-
-        <div class="panel-body">
-
-            <h2>Download the Build</h2>
-
-            <p>
-                You can download the complete world or just
-                the schematic to paste into your own world.
-            </p>
-
-            <a class="button"
-               href="../downloads/medieval-house-world.zip"
-               download>
-                Download World
-            </a>
-
-            <a class="button"
-               href="../downloads/medieval-house.litematic"
-               download>
-                Download Schematic
-            </a>
-
-        </div>
+    <section class="content-panel">
+      <h2>Build information</h2>
+      <ul class="feature-list">
+        <li><strong>Creator:</strong> suparabbitboy</li>
+        <li><strong>Style:</strong> Medieval / Fantasy</li>
+        <li><strong>Version:</strong> Minecraft 1.21.x</li>
+      </ul>
     </section>
+  </main>
 
-    <!-- TUTORIAL -->
-    <section class="panel">
-        <div class="panel-title">Building Tutorial</div>
-
-        <div class="panel-body">
-
-            <h2>Build it Yourself!</h2>
-
-            <p>
-                Want to build this house yourself?
-                Watch the YouTube tutorial below.
-            </p>
-
-            <a class="button youtube"
-               href="https://www.youtube.com/watch?v=SMxajswyHsE"
-               target="_blank"
-               rel="noopener noreferrer">
-                Watch YouTube Tutorial
-            </a>
-
-        </div>
-    </section>
-
-</div>
-
-<footer>
-    <strong>suparabbitboy</strong><br>
-    Minecraft builds, downloads and projects.<br>
-    &copy; 2026 suparabbitboy. All rights reserved.<br>
-    Not affiliated with Mojang or Microsoft.
-</footer>
-
+  <footer class="site-footer">
+    <span>© 2026 suparabbitboy</span>
+    <a href="../index.html">Back to homepage</a>
+  </footer>
 </body>
 </html>

@@ -3,95 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blue Emeralds | suparabbitboy</title>
-  <link rel="icon" type="image/png" href="../images/profile.png">
-  <link rel="stylesheet" href="../style.css">
+  <title>suparabbitboy | Minecraft Projects</title>
+  <link rel="icon" type="image/png" href="images/profile.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="../index.html">
-      <img src="../images/profile.png" alt="" class="brand-icon">
+    <a class="brand" href="index.html">
+      <img src="images/profile.png" alt="" class="brand-icon">
       <span>suparabbitboy</span>
     </a>
     <nav aria-label="Main navigation">
-      <a href="../index.html#projects">Projects</a>
-      <a href="../index.html#youtube">YouTube</a>
-      <a href="../index.html#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#youtube">YouTube</a>
+      <a href="#about">About</a>
     </nav>
   </header>
 
-  <main class="page-main">
-    <a class="back-link" href="../index.html#projects">← Back to projects</a>
-    <section class="project-hero">
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MINECRAFT CREATIONS</p>
+        <h1>Welcome to my little corner of Minecraft.</h1>
+        <p>Check out my builds, resource packs, datapacks, mods, modpacks and other projects.</p>
+        <a class="button" href="#projects">Explore projects <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art">
+        <img src="images/featured-build.png" alt="Featured Minecraft build">
+        <span class="image-caption">A Medieval Castle I've made</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">BUILT IN MINECRAFT</p>
+          <h2>My projects</h2>
+        </div>
+        <p class="section-note">A few things I've made, all in one place.</p>
+      </div>
+
+      <div class="project-tabs" role="tablist" aria-label="Project categories">
+        <button class="project-tab" id="tab-builds" type="button" role="tab" aria-selected="true" aria-controls="panel-builds">Builds <span>01</span></button>
+        <button class="project-tab" id="tab-packs" type="button" role="tab" aria-selected="false" aria-controls="panel-packs" tabindex="-1">Resource packs <span>01</span></button>
+        <button class="project-tab" id="tab-datapacks" type="button" role="tab" aria-selected="false" aria-controls="panel-datapacks" tabindex="-1">Datapacks</button>
+        <button class="project-tab" id="tab-mods" type="button" role="tab" aria-selected="false" aria-controls="panel-mods" tabindex="-1">Mods</button>
+        <button class="project-tab" id="tab-modpacks" type="button" role="tab" aria-selected="false" aria-controls="panel-modpacks" tabindex="-1">Modpacks</button>
+        <button class="project-tab" id="tab-other" type="button" role="tab" aria-selected="false" aria-controls="panel-other" tabindex="-1">Other</button>
+      </div>
+
+      <div class="project-panels">
+        <div class="project-panel" id="panel-builds" role="tabpanel" aria-labelledby="tab-builds" tabindex="0">
+          <article class="project-card">
+            <a class="project-art project-art-build" href="builds/medieval-house.html" aria-label="View Medieval House build">
+              <img src="images/medieval-house.png" alt="Medieval Minecraft house">
+              <span>BUILD · 1.21</span>
+            </a>
+            <div class="project-card-copy">
+              <p class="eyebrow">BUILD</p>
+              <h3><a href="builds/medieval-house.html">Medieval House</a></h3>
+              <p>A timber-framed home with a tall roof and a little fantasy influence.</p>
+              <a class="project-card-link" href="builds/medieval-house.html">Take a look <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-panel" id="panel-packs" role="tabpanel" aria-labelledby="tab-packs" tabindex="0" hidden>
+          <article class="project-card">
+            <a class="project-art project-art-emerald" href="resource-packs/blue-emeralds.html" aria-label="View Blue Emeralds resource pack">
+              <span class="emerald-mark" aria-hidden="true">◆</span>
+              <span>RESOURCE PACK</span>
+            </a>
+            <div class="project-card-copy">
+              <p class="eyebrow">RESOURCE PACK</p>
+              <h3><a href="resource-packs/blue-emeralds.html">Blue Emeralds</a></h3>
+              <p>Emeralds in blue, plus a handful of custom items and other small changes.</p>
+              <a class="project-card-link" href="resource-packs/blue-emeralds.html">See what's inside <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-panel empty-panel" id="panel-datapacks" role="tabpanel" aria-labelledby="tab-datapacks" tabindex="0" hidden>
+          <h3>Datapacks</h3>
+          <p>No datapacks here just yet. I'm still working on things to share.</p>
+        </div>
+        <div class="project-panel empty-panel" id="panel-mods" role="tabpanel" aria-labelledby="tab-mods" tabindex="0" hidden>
+          <h3>Mods</h3>
+          <p>No mods to show yet. Check back when I've made something worth sharing.</p>
+        </div>
+        <div class="project-panel empty-panel" id="panel-modpacks" role="tabpanel" aria-labelledby="tab-modpacks" tabindex="0" hidden>
+          <h3>Modpacks</h3>
+          <p>No modpacks here for now. This space is ready for a future project.</p>
+        </div>
+        <div class="project-panel empty-panel" id="panel-other" role="tabpanel" aria-labelledby="tab-other" tabindex="0" hidden>
+          <h3>Other projects</h3>
+          <p>Nothing else to share right now, but there's room for more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="youtube-panel" id="youtube">
+      <div class="youtube-mark">▶</div>
       <div>
-        <p class="eyebrow">RESOURCE PACK</p>
-        <h1>Blue Emeralds</h1>
-        <p>A small Minecraft resource pack featuring blue-themed emeralds, custom items and a collection of fun textures. It isn't a full visual overhaul — just a bunch of custom items and tweaks.</p>
-        <div class="meta-row">
-          <span class="pill">Version 1.2</span>
-          <span class="pill">Minecraft 1.21+</span>
-          <span class="pill">Pack format 34</span>
-        </div>
-        <div class="project-links">
-          <a class="button" href="https://modrinth.com/resourcepack/blue-emeralds/versions" target="_blank" rel="noopener">Download on Modrinth ↗</a>
-          <a class="button secondary" href="https://www.planetminecraft.com/texture-pack/blue-emeralds-6486419/" target="_blank" rel="noopener">Planet Minecraft ↗</a>
-        </div>
+        <p class="eyebrow">WATCH ALONG</p>
+        <h2>Find me on YouTube</h2>
+        <p>Shorts, builds and other Minecraft videos.</p>
       </div>
-      <img class="project-cover" src="../images/blue-emeralds/BE-main.png" alt="Blue Emeralds resource pack preview">
+      <a class="button button-light" href="https://www.youtube.com/@suparabbitboy" target="_blank" rel="noopener">Visit channel <span aria-hidden="true">↗</span></a>
     </section>
 
-    <section class="content-panel">
-      <h2>What's included?</h2>
-      <p>Blue Emeralds is a small pack with custom models and textures, themed items and a few vanilla item changes.</p>
-      <ul class="feature-list">
-        <li><strong>Blue-themed emeralds:</strong> custom_emerald1 and custom_emerald2</li>
-        <li><strong>Custom gold ingot:</strong> custom_gold_ingot1</li>
-        <li><strong>Carved pumpkin variants:</strong> custom_carved_pumpkin1</li>
-        <li><strong>Fun custom items:</strong> French Fries, Master Sword, BunnyBux and Money</li>
-        <li><strong>Vanilla changes:</strong> Bread, Emerald, Gold Ingot, Iron Sword and Carved Pumpkin</li>
-        <li><strong>Small extras:</strong> adjusted pumpkin blur and tutorial textures</li>
-      </ul>
-      <p class="note">Ideal for players who want some fun custom items, or creators and modders looking for assorted item ideas.</p>
-    </section>
-
-    <section class="content-panel">
-      <h2>Screenshots</h2>
-      <div class="gallery">
-        <img src="../images/blue-emeralds/BE-CatCafe_Fries.png" alt="Cat Cafe fries">
-        <img src="../images/blue-emeralds/BE-Hamburger.png" alt="Hamburger item">
-        <img src="../images/blue-emeralds/BE-Pink_Emerald.png" alt="Pink emerald">
-        <img src="../images/blue-emeralds/BE-Bunny-Bux.png" alt="BunnyBux">
-        <img src="../images/blue-emeralds/BE-Cat_Currency.png" alt="Cat currency">
-        <img src="../images/blue-emeralds/BE-Master_Sword.png" alt="Master Sword">
-        <img src="../images/blue-emeralds/BE-Blue_Emerald.png" alt="Blue emerald">
-        <img src="../images/blue-emeralds/BE-Money.png" alt="Money item">
-        <img src="../images/blue-emeralds/BE-fries.png" alt="French fries">
-      </div>
-    </section>
-
-    <section class="content-panel">
-      <h2>Version history</h2>
-      <div class="version">
-        <h3>v1.2</h3>
-        <p>November 12, 2025 · Fixes bugs.</p>
-        <a href="https://modrinth.com/resourcepack/blue-emeralds/version/1.2" target="_blank" rel="noopener">View version ↗</a>
-      </div>
-      <div class="version">
-        <h3>Alpha 1.1</h3>
-        <p>May 3, 2025 · Fixes some bugs.</p>
-        <a href="https://modrinth.com/resourcepack/blue-emeralds/version/1.1" target="_blank" rel="noopener">View version ↗</a>
-      </div>
-      <div class="version">
-        <h3>Alpha 1.0</h3>
-        <p>May 3, 2025 · First of many versions. Added BunnyBux, Blue Emeralds, Pink Emeralds, Broken Hat, Kitty Currency, French Fries, Master Sword and Money.</p>
-        <a href="https://modrinth.com/resourcepack/blue-emeralds/version/1.0" target="_blank" rel="noopener">View version ↗</a>
-      </div>
+    <section class="about-section" id="about">
+      <p class="eyebrow">A LITTLE ABOUT THIS SITE</p>
+      <h2>Made for sharing Minecraft projects.</h2>
+      <p>This is where I collect the things I create for Minecraft. Browse the projects, check out the screenshots and follow the download links.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <span>© 2026 suparabbitboy</span>
-    <a href="../index.html">Back to homepage</a>
+    <span>Made for Minecraft fans</span>
   </footer>
+  <script>
+    const projectTabs = Array.from(document.querySelectorAll('[role="tab"]'));
+
+    function selectProjectTab(tab, moveFocus = false) {
+      projectTabs.forEach((item) => {
+        const selected = item === tab;
+        item.setAttribute('aria-selected', String(selected));
+        item.tabIndex = selected ? 0 : -1;
+        document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+      });
+
+      if (moveFocus) tab.focus();
+    }
+
+    projectTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => selectProjectTab(tab));
+      tab.addEventListener('keydown', (event) => {
+        let nextIndex;
+        if (event.key === 'ArrowRight') nextIndex = (index + 1) % projectTabs.length;
+        else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + projectTabs.length) % projectTabs.length;
+        else if (event.key === 'Home') nextIndex = 0;
+        else if (event.key === 'End') nextIndex = projectTabs.length - 1;
+        else return;
+
+        event.preventDefault();
+        selectProjectTab(projectTabs[nextIndex], true);
+      });
+    });
+  </script>
 </body>
 </html>
