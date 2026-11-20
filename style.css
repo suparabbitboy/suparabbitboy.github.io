@@ -1,0 +1,49 @@
+SUPARABBITBOY WEBSITE
+
+FILE STRUCTURE
+---------------
+index.html
+    The main website. All project categories are shown here.
+
+style.css
+    Shared styling used by the homepage and project detail pages.
+
+resource-packs/blue-emeralds.html
+    Detailed page for the Blue Emeralds resource pack.
+
+images/profile.png
+    Profile image and favicon.
+
+images/featured-build.png
+    Image shown in the homepage hero section.
+
+images/blue-emeralds/
+    Put all Blue Emeralds screenshots in this folder.
+
+downloads/
+    Put downloadable project files here when you add them.
+
+IMAGES TO ADD
+-------------
+images/profile.png
+images/featured-build.png
+images/blue-emeralds/BE-main.png
+images/blue-emeralds/BE-CatCafe_Fries.png
+images/blue-emeralds/BE-Hamburger.png
+images/blue-emeralds/BE-Pink_Emerald.png
+images/blue-emeralds/BE-Bunny-Bux.png
+images/blue-emeralds/BE-Cat_Currency.png
+images/blue-emeralds/BE-Master_Sword.png
+images/blue-emeralds/BE-Blue_Emerald.png
+images/blue-emeralds/BE-Money.png
+images/blue-emeralds/BE-fries.png
+
+NOTES
+-----
+- The project categories (Builds, Resource Packs, Datapacks, Mods, Modpacks and Other)
+  are all displayed on index.html. There are no separate category pages.
+- Individual project detail pages can be placed inside their matching folders.
+- The Blue Emeralds page uses ../style.css and ../images/... because it is one folder
+  below the website root.
+- Update the YouTube link in index.html if your channel URL changes.
+- The image files are not included in this ZIP; add your own images using the filenames above.
