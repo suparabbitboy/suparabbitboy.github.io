@@ -1,116 +1,398 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Totally Normal Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>suparabbitboy | Minecraft Builds</title>
+<link rel="icon" type="image/png" href="images/profile.png">
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
+    margin: 0;
+    background: #e9e9df;
+    color: #30342c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
-/* Hide cursor when prank active */
-.hide-cursor {
-  cursor: none;
+a {
+    color: #547c3e;
+    text-decoration: none;
 }
 
-/* Page sections */
-.section {
-  display: none;
-  padding: 40px;
+a:hover {
+    color: #83a95e;
 }
 
-.active {
-  display: block;
+/* HEADER */
+
+header {
+    background: #385c37;
+    color: white;
+    border-bottom: 5px solid #29462b;
 }
 
-/* Secret exit zone */
-#exitZone {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
-  z-index: 999;
+.header-inner {
+    max-width: 1050px;
+    margin: auto;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-/* Make it invisible */
-#exitZone {
-  background: transparent;
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 3px solid #b7d19e;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    color: #d3e4c8;
+    margin: 7px 0 0;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #293a2c;
+}
+
+nav .inner {
+    max-width: 1050px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 15px 19px;
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    background: #3c5139;
+    color: white;
+    border-bottom-color: #a8ce7c;
+}
+
+/* MAIN LAYOUT */
+
+.container {
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.panel {
+    background: #f8f7f1;
+    border: 1px solid #d0d0c3;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.panel-title {
+    background: #547a43;
+    color: white;
+    padding: 13px 18px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.panel-body {
+    padding: 20px;
+    line-height: 1.7;
+}
+
+h2 {
+    font-size: 23px;
+    margin: 0 0 12px;
+}
+
+h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+}
+
+/* FEATURED BUILD */
+
+.featured-image {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+.featured-description {
+    color: #555a50;
+}
+
+/* BUILDS */
+
+.build-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.build {
+    background: #eeeee5;
+    border: 1px solid #d5d5c8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.build img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+.build p {
+    font-size: 14px;
+    color: #666b60;
+    margin: 5px 0 12px;
+}
+
+.build a {
+    font-weight: bold;
+}
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    background: #5b8842;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 4px;
+    margin: 5px 5px 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #456c33;
+}
+
+.button:hover {
+    background: #466e35;
+    color: white;
+}
+
+.youtube {
+    background: #c44438;
+    border-color: #a3332b;
+}
+
+.youtube:hover {
+    background: #a5332b;
+}
+
+/* ABOUT */
+
+.about-text {
+    max-width: 750px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #293a2c;
+    color: #bfc9b8;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+footer strong {
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .header-inner {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .build-list {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-body {
+        padding: 15px;
+    }
+
+    .button {
+        display: block;
+        text-align: center;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- NORMAL PAGE -->
-<div id="home" class="section active">
-  <h1>Welcome To My Website</h1>
-  <p>Click anywhere to continue.</p>
+<!-- HEADER -->
+<header>
+    <div class="header-inner">
+        <img class="logo" src="images/profile.png" alt="Profile">
+        <div>
+            <h1>suparabbitboy</h1>
+            <p>Minecraft builds, projects and more.</p>
+        </div>
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="inner">
+        <a href="index.html">Home</a>
+        <a href="#builds">Builds</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- WELCOME -->
+    <section class="panel">
+        <div class="panel-title">Welcome!</div>
+        <div class="panel-body">
+
+            <img class="featured-image"
+                 src="images/featured-build.png"
+                 alt="Featured Minecraft build">
+
+            <h2>Welcome to my website!</h2>
+
+            <p class="featured-description">
+                Hey! Welcome to the official suparabbitboy website.
+                Here you can find my Minecraft builds, schematics,
+                tutorials and other projects.
+            </p>
+
+            <p>
+                Take a look around and check out some of my builds!
+            </p>
+
+            <a class="button youtube"
+               href="https://www.youtube.com/@suparabbitboy"
+               target="_blank" rel="noopener noreferrer">
+                Visit my YouTube channel
+            </a>
+
+        </div>
+    </section>
+
+    <!-- BUILDS -->
+    <section class="panel" id="builds">
+        <div class="panel-title">My Builds</div>
+        <div class="panel-body">
+
+            <div class="build-list">
+
+                <div class="build">
+                    <img src="images/medieval-house.png"
+                         alt="Medieval house">
+
+                    <h3>Medieval House</h3>
+
+                    <p>
+                        A detailed medieval-style Minecraft house.
+                    </p>
+
+                    <a href="builds/medieval-house.html">
+                        View build &raquo;
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- YOUTUBE -->
+    <section class="panel" id="youtube">
+        <div class="panel-title">YouTube</div>
+        <div class="panel-body">
+
+            <h2>Find me on YouTube!</h2>
+
+            <p>
+                I upload Minecraft building videos, showcases
+                and other Minecraft content. Check out my channel!
+            </p>
+
+            <a class="button youtube"
+               href="https://www.youtube.com/@suparabbitboy"
+               target="_blank" rel="noopener noreferrer">
+                Visit YouTube
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="panel" id="about">
+        <div class="panel-title">About Me</div>
+        <div class="panel-body about-text">
+
+            <h2>About suparabbitboy</h2>
+
+            <p>
+                I'm a Minecraft creator who enjoys building
+                things and sharing them with others.
+                This website is where you can find my
+                projects and downloads.
+            </p>
+
+            <p>Thanks for visiting!</p>
+
+        </div>
+    </section>
+
 </div>
 
-<!-- PRANK PAGE -->
-<div id="prank" class="section">
-
-<h1 style="color:red;">YOUR PC HAS THE ID10T ERROR!</h1>
-<h2 style="color:red;">HOW TO FIX:</h2>
-<h3>Buy 100 Bags of Cheetos, eat them all, and seek mental help.</h3>
-
-<p style="margin-top:100px;">(System Scan Running...)</p>
-
-</div>
-
-<!-- REVEAL PAGE -->
-<div id="reveal" class="section">
-  <h1 style="color:blue;">LOL THIS WAS A PRANK XD</h1>
-  <p>You can leave fullscreen now.</p>
-</div>
-
-<!-- SECRET EXIT CLICK ZONE -->
-<div id="exitZone" onclick="endPrank()"></div>
-
-<script>
-
-let prankTimer;
-
-// Start prank on click
-document.getElementById("home").addEventListener("click", startPrank);
-
-function startPrank() {
-
-  // Switch pages
-  document.getElementById("home").classList.remove("active");
-  document.getElementById("prank").classList.add("active");
-
-  // Fullscreen
-  document.documentElement.requestFullscreen();
-
-  // Hide cursor
-  document.body.classList.add("hide-cursor");
-
-  // Auto end after 2 minutes (120000 ms)
-  prankTimer = setTimeout(endPrank, 120000);
-}
-
-function endPrank() {
-
-  clearTimeout(prankTimer);
-
-  // Exit fullscreen
-  if (document.fullscreenElement) {
-    document.exitFullscreen();
-  }
-
-  // Show reveal page
-  document.getElementById("prank").classList.remove("active");
-  document.getElementById("reveal").classList.add("active");
-
-  // Restore cursor
-  document.body.classList.remove("hide-cursor");
-}
-
-</script>
+<footer>
+    <strong>suparabbitboy</strong><br>
+    Minecraft builds, downloads and projects.<br>
+    &copy; 2026 suparabbitboy. All rights reserved.<br>
+    Not affiliated with Mojang or Microsoft.
+</footer>
 
 </body>
 </html>
