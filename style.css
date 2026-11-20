@@ -80,6 +80,19 @@ nav a:hover { background: rgba(255,255,255,.12); }
   padding-block: 64px;
 }
 
+.project-art-emerald img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.project-art-emerald {
+  position: relative;
+  overflow: hidden;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   color: #6f8c5a;
@@ -375,6 +388,7 @@ h3 { margin: 0 0 8px; }
   gap: 12px;
 }
 .gallery img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 6px; }
+.recipe-gallery img { aspect-ratio: auto; object-fit: contain; background: #edf2e8; }
 .version { padding: 16px 0; border-bottom: 1px solid var(--line); }
 .version:last-child { border-bottom: 0; }
 .version p { margin: 4px 0; color: var(--muted); }

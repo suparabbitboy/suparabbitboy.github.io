@@ -46,7 +46,7 @@
       <div class="project-tabs" role="tablist" aria-label="Project categories">
         <button class="project-tab" id="tab-builds" type="button" role="tab" aria-selected="true" aria-controls="panel-builds">Builds <span>01</span></button>
         <button class="project-tab" id="tab-packs" type="button" role="tab" aria-selected="false" aria-controls="panel-packs" tabindex="-1">Resource packs <span>01</span></button>
-        <button class="project-tab" id="tab-datapacks" type="button" role="tab" aria-selected="false" aria-controls="panel-datapacks" tabindex="-1">Datapacks</button>
+        <button class="project-tab" id="tab-datapacks" type="button" role="tab" aria-selected="false" aria-controls="panel-datapacks" tabindex="-1">Datapacks <span>01</span></button>
         <button class="project-tab" id="tab-mods" type="button" role="tab" aria-selected="false" aria-controls="panel-mods" tabindex="-1">Mods</button>
         <button class="project-tab" id="tab-modpacks" type="button" role="tab" aria-selected="false" aria-controls="panel-modpacks" tabindex="-1">Modpacks</button>
         <button class="project-tab" id="tab-other" type="button" role="tab" aria-selected="false" aria-controls="panel-other" tabindex="-1">Other</button>
@@ -57,7 +57,7 @@
           <article class="project-card">
             <a class="project-art project-art-build" href="builds/medieval-house.html" aria-label="View Medieval House build">
               <img src="images/medieval-house.png" alt="Medieval Minecraft house">
-              <span>BUILD · 1.21</span>
+              <span>BUILD</span>
             </a>
             <div class="project-card-copy">
               <p class="eyebrow">BUILD</p>
@@ -71,8 +71,8 @@
         <div class="project-panel" id="panel-packs" role="tabpanel" aria-labelledby="tab-packs" tabindex="0" hidden>
           <article class="project-card">
             <a class="project-art project-art-emerald" href="resource-packs/blue-emeralds.html" aria-label="View Blue Emeralds resource pack">
-              <span class="emerald-mark" aria-hidden="true">◆</span>
-              <span>RESOURCE PACK</span>
+              <img src="images/blue-emeralds/BE-main.png" alt="Blue Emeralds resource pack">
+              <span>RESOURCE PACK · 1.20.x–1.21.1</span>
             </a>
             <div class="project-card-copy">
               <p class="eyebrow">RESOURCE PACK</p>
@@ -83,9 +83,19 @@
           </article>
         </div>
 
-        <div class="project-panel empty-panel" id="panel-datapacks" role="tabpanel" aria-labelledby="tab-datapacks" tabindex="0" hidden>
-          <h3>Datapacks</h3>
-          <p>No datapacks here just yet. I'm still working on things to share.</p>
+        <div class="project-panel" id="panel-datapacks" role="tabpanel" aria-labelledby="tab-datapacks" tabindex="0" hidden>
+          <article class="project-card">
+            <a class="project-art project-art-emerald" href="datapacks/blue-emeralds.html" aria-label="View Blue Emeralds datapack">
+              <img src="images/blue-emeralds/BE-main.png" alt="Blue Emeralds datapack">
+              <span>DATAPACK</span>
+            </a>
+            <div class="project-card-copy">
+              <p class="eyebrow">DATAPACK</p>
+              <h3><a href="datapacks/blue-emeralds.html">Blue Emeralds</a></h3>
+              <p>Adds recipes for Blue Emeralds, Pink Emeralds, Money and the Master Sword.</p>
+              <a class="project-card-link" href="datapacks/blue-emeralds.html">See the recipes <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         </div>
         <div class="project-panel empty-panel" id="panel-mods" role="tabpanel" aria-labelledby="tab-mods" tabindex="0" hidden>
           <h3>Mods</h3>
